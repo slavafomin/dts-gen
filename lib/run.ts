@@ -124,6 +124,7 @@ try {
         printHelp();
         process.exit(1);
     } else if (e.code === 'MODULE_NOT_FOUND') {
+        console.log();
         console.log(`Couldn't load module "${args.module}". ` +
             `Please install it globally (npm install -g ${args.module}) and try again.`);
         process.exit(1);
